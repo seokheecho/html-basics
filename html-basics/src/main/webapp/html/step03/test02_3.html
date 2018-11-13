@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML</title>
+        <style>
+        /* 셀렉터(selector) Ⅱ
+            자손태그 지정
+            => 특정 대상자를 조상으로 갖는 태그를 지정하는 방법
+            => 문법
+            조상대상자 적용대상자 {...}
+        */
+
+            #content li {
+                border-width: 1px;
+                border-color: red;
+                border-style: dashed;
+                margin: 10px;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div id="menu">
+            <img src='https://pixnio.com/free-images/2017/05/17/2017-05-17-10-11-02-900x600.jpg'>
+            <ul>
+                <li class="c1">교육안내</li>
+                <li class="c1">교육과정</li>
+                <li class="c2">수강신청</li>
+                <li class="c2">온라인상담</li>
+                <li class="c2">커뮤니티</li>
+            </ul>
+            <button>로그인</button>
+            <button>회원가입</button>
+        </div>
+        
+        <div id="content">
+            <h1>2018년 HTML-Basics</h1>
+            <p>2018년 HTML-Basics 기초는 튼튼하게!</p>
+            <ul>
+                <li>Step01</li>
+                <li>Step02</li>
+                <li>Step03</li>                
+            </ul>
+        </div>
+        
+        <div id="footer">
+            <img src="https://pixnio.com/free-images/2017/05/16/2017-05-16-09-50-29-900x600.jpg"> | IT hee
+            <address>서울시 송파구 </address>
+            (주)IT hee 잠실
+        </div>
+        
+    </body>
+</html>
