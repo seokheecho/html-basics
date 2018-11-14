@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML</title>
+  <style>
+  /* 태그 너비와 높이
+      content-box(기본)
+        => width = 콘텐츠 너비
+        => height = 콘텐츠 높이
+      border-box
+      => width = 콘텐츠너비 + 좌, 우 패딩너비 + 좌, 우 테두리너비 + 좌, 우 마진너비
+      => height = 콘텐츠높이 + 좌, 우 패딩높이 + 좌, 우 테두리높이 + 좌, 우 마진높이
+  */
+  div {
+    border: 10px solid red;
+    padding: 20px;
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    width: 200px;
+    height: 100px;
+  }
+  #content {
+    background-color: gray;
+    box-sizing: border-box; /*
+                               테두리가 있는 경우 테두리의 두께로 인해 원하는 크기를 찾기 어렵다.
+                               box-sizing: border-box; 로 테두리를 포함한 크기를 지정할 수 있다.
+                            */
+  }
+      
+      /*
+        content-box : 콘텐트 영역을 기준으로 크기를 정합니다.
+        border-box : 테두리를 기준으로 크기를 정합니다.
+        initial : 기본값으로 설정합니다.
+        inherit : 부모 요소의 속성값을 상속받습니다.
+      */
+      
+  </style>
+</head>
+<body>
+  <div id="menu">menu</div>
+  <div id="content">content</div>
+
+</body>
+</html>
