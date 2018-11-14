@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML</title>
+        <style>
+          /* 실렉터(selector) III
+             특정 조건을 갖는 대상자를 지정하기
+             => 대상자를 지정할 때 조건을 나열할 수 있다.
+             => 문법
+                대상자#아이디 {...}
+                대상자.분류명 {...}
+                대상자:상태명 {...}
+                대상자[속성명] {...}
+           */
+
+            li:first-child { /* 자식들 중에서 첫째인 li */
+                background-color: gray;
+            }
+            
+            li:hober { /* 마우스 커서가 올려져 있는 li */
+                text-decoration: underline;
+            }
+            
+            a:visited { /* 링크 방문한 후 링크 색 변화 */
+                color: gray;
+            }
+            
+            a:link { /* 링크 색 변화, 기본 파란색*/
+                color: red;
+            }
+            
+            input:active { /* input 박스 클릭 시 한번 상태 변화, focus와 비교해서 보자 */
+                background-color: yellow;
+            }
+            
+            input:focus { /* 키보드 입력을 받을 수 있는 상태 */
+                background-color: green;
+            }
+            
+            button: focus {
+                background-color: red;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div id="menu">
+            <img src='https://pixnio.com/free-images/2017/05/17/2017-05-17-10-11-02-900x600.jpg'>
+            <ul>
+                <li class="c1">교육안내</li>
+                <li class="c1">교육과정</li>
+                <li class="c2">수강신청</li>
+                <li class="c2">온라인상담</li>
+                <li class="c2">커뮤니티
+                    <ol>
+                      <li>게시판</li>
+                      <li>QnA</li>
+                      <li>방명록</li>
+                      <li>FAQ</li>
+                    </ol>
+                </li>
+            </ul>
+            아이디 : <input type="text" name="username"><br> 
+            암호 : <input type="password" name="pwd"><br>
+            <button>로그인</button>
+            <button>회원가입</button>
+            <a href="http://www.facebook.com">페이스북</a>
+            <a href="http://www.google.com">구글</a>
+            <a href="http://www.twitter.com">트위터</a>
+        </div>
+        
+        <div id="content">
+            <h1>2018년 HTML-Basics</h1>
+            <p>2018년 HTML-Basics 기초는 튼튼하게!</p>
+            <ul class="c2">
+                <li>Step01</li>
+                <li class="c2">Step02</li>
+                <li class="c2">Step03</li>                
+            </ul>
+        </div>
+        
+        <div id="footer">
+            <img src="https://pixnio.com/free-images/2017/05/16/2017-05-16-09-50-29-900x600.jpg"> | IT hee
+            <address>서울시 송파구 </address>
+            (주)IT hee 잠실
+        </div>
+        
+    </body>
+</html>
