@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML</title>
+        <style>
+          /* 상속이 가능한 스타일
+            => 스타일 중에서 자손 태그로 값을 자동으로 상속하는 것이 있다.
+                예) 폰트, 색상 등
+            => 지정된 태그에 대해서만 스타일이 적용되는 것이 있다.
+                예) 테두리, 패딩, 마진 등
+            */
+
+            body {
+                color: red;
+            }
+            
+            #menu {
+                border: 3px solid navy;
+            }
+            
+            #menu a {
+                border: 3px solid navy;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div id="menu">
+            <img src='https://pixnio.com/free-images/2017/05/17/2017-05-17-10-11-02-900x600.jpg'>
+            <ul>
+                <li class="c1">교육안내</li>
+                <li class="c1">교육과정</li>
+                <li class="c2">수강신청</li>
+                <li class="c2">온라인상담</li>
+                <li class="c2">커뮤니티
+                    <ol>
+                      <li>게시판</li>
+                      <li>QnA</li>
+                      <li>방명록</li>
+                      <li>FAQ</li>
+                    </ol>
+                </li>
+            </ul>
+            아이디 : <input type="text" name="username"><br> 
+            암호 : <input type="password" name="pwd"><br>
+            <button>로그인</button>
+            <button>회원가입</button>
+            <a href="http://www.facebook.com">페이스북</a>
+            <a href="http://www.google.com">구글</a>
+            <a href="http://www.twitter.com">트위터</a>
+        </div>
+        
+        <div id="content">
+            <h1>2018년 HTML-Basics</h1>
+            <p>2018년 HTML-Basics 기초는 튼튼하게!</p>
+            <ul class="c2">
+                <li>Step01</li>
+                <li class="c2">Step02</li>
+                <li class="c2">Step03</li>                
+            </ul>
+        </div>
+        
+        <div id="footer">
+            <img src="https://pixnio.com/free-images/2017/05/16/2017-05-16-09-50-29-900x600.jpg"> | IT hee
+            <address>서울시 송파구 </address>
+            (주)IT hee 잠실
+        </div>
+        
+    </body>
+</html>
