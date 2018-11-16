@@ -1,3 +1,0 @@
-git-test01
-git-test02
-git-test03
